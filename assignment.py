@@ -1,12 +1,16 @@
 import tkinter as tk
+from client.gui_app import Frame
 
 # initiallize app
+def main():
+    root = tk.Tk()
+    root.title("Assignment")
 
-root = tk.Tk()
-root.title("Assigment")
-root.eval("tk::PlaceWindow . center")
+    root.resizable(0,0)
 
+    app= Frame(root = root)
 
-# run app
-
-root.mainloop()
+    # run app
+    app.mainloop()
+if __name__=='__main__':
+    main()
