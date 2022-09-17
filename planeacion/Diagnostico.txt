@@ -1,0 +1,54 @@
+Info proceso
+
+1. Llega un archivo por cada ruta
+2. Primer piso hay tres áreas ( raza, polar y detergentes) una persona escargada de cada categoria
+3. Segundo (dulces)y tercer(tecnquimicas, papel higienico, J&J) piso  hay dos personas en cada piso se divide por mitad lo que salga por piso
+4. Como se distribuye el cargue:  Se calcula el valor del precio cargue de 1 Millon el otro 1 Millon
+
+
+
+
+
+
+Esperados
+se metan todas las rutas calculo de lo que necesita
+Segundo y tercer piso se divida equilibrado ( criterio) valor
+el ideal es contar las unidades del cargue ej x cargue x persona debe hacer tantas unidades contabilizar rendimiento
+
+App Lo que debe hacer
+
+Recibir cargue el valor de cada piso o cada área y la cantidad de unidades
+
+*************************************************************************************************
+
+Solucion
+
+Pasos.
+1. Recibir cargue
+	1.1 Registro planilla de entrega
+	1.2 Fecha hora de entrega
+	1.3 Registro Funcionarios
+		Piso 1
+			1.1
+			1.2
+			1.3
+		Piso 2
+			2.1
+			2.2
+		Piso 3
+			3.1
+			3.2
+	1.4 Cargue Planilla
+			
+
+	
+2. Leer codigo
+3. Identificar piso
+4. Asignar al piso  codigo unidades y precio unit precio total
+5. Sumatoría total nivel 1.1, 1.2, 1.3
+6. Sumatoría Nivel 2 asignar total
+7. Sumatoría Nivel 3 asignar total
+8. Alistamiento Cargue
+
+*******************************************************************************************
+Diagramación 
