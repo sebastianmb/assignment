@@ -1,5 +1,5 @@
 import tkinter as tk
-from client.gui_app import Frame
+from client.gui_app import Frame, barra_menu
 
 # initiallize app
 def main():
@@ -7,6 +7,8 @@ def main():
     root.title("Assignment")
 
     root.resizable(0,0)
+
+    barra_menu(root)
 
     app= Frame(root = root)
 
