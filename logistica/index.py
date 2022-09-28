@@ -1,4 +1,4 @@
-tar librerias
+ Importar librerias
 import pandas as pd
 import numpy as np
 import xlrd
@@ -20,24 +20,34 @@ dtype('int64')
 merged_inner=pd.merge(left=dfcargue, right=dfassignment, left_on='Codigo', right_on='Codigo')
 ​
 #merged_inner
+#
 #Export Dataframe to excel
 prueba=pd.DataFrame(merged_inner)
 ​
 filename='prueba.xlsx'
 ​
-prueba.to_excel(filename)
+#prueba.to_excel(filename)
 ​
 ​
-print('prueba record successfully exported into Excel File')
-​
-prueba record successfully exported into Excel File
+#print('prueba record successfully exported into Excel File')
+#prueba
 df = prueba.loc[:, ~prueba.columns.str.contains('^Unnamed')]
 ​
 filename='df.xlsx'
 ​
-prueba.to_excel(filename)
+#prueba.to_excel(filename)
 ​
 ​
-print('prueba record successfully exported into Excel File')
+#print('prueba record successfully exported into Excel File')
+#df.head()
+#filtrado por niveles
+nivel11 = df['Nivel'] == 2.0
+nivel11
+df_nivel11 = df[nivel11]
+#df_nivel11.head()
+#filtrado por niveles
+nivel11 = df['Nivel'] == 2.0
+nivel11
+df_nivel11 = df[nivel11]
+#df_nivel11.head()
 ​
-prueba record successfully exported into Excel File
