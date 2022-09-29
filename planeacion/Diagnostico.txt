@@ -42,10 +42,12 @@ Pasos.
 			
 
 	
-2. Leer codigo
+2. Leer codigo-
+	2.1 eliminar fila texto
 2.1 Identificar campo en común
-3. Identificar piso
-4. Asignar al piso  codigo unidades y precio unit precio total
+	borrar columnas nulas
+3. Identificar piso-
+4. Asignar al piso  codigo unidades y precio unit precio total-
 configurar valor codigo de dfcargue en número
 5. arreglar info
 5. Sumatoría total nivel 1.1, 1.2, 1.3
