@@ -46,8 +46,18 @@ nivel11
 df_nivel11 = df[nivel11]
 #df_nivel11.head()
 #filtrado por niveles
-nivel11 = df['Nivel'] == 2.0
-nivel11
-df_nivel11 = df[nivel11]
-#df_nivel11.head()
-​
+nivel2 = df['Nivel'] == 2.0
+nivel2
+df_nivel2 = df[nivel2]
+#df_nivel2.head()
+
+
+TotalV2u = df_nivel2['Venta'].sum()
+
+TotalV2p = df_nivel2['Precio'].sum()
+
+
+print ("Unidades Totales nivel 2: "+TotalV2u.astype(str))
+print ("Precio Total nivel 2: "+TotalV2p.astype(str))
+#Contar numero de filas ya filtrado por nivel
+df_nivel2.shape

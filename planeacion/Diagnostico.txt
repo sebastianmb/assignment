@@ -44,6 +44,7 @@ Pasos.
 	
 2. Leer codigo-
 	2.1 eliminar fila texto
+	eliminar casillas texto o vacias con cero******
 2.1 Identificar campo en común
 	borrar columnas nulas
 3. Identificar piso-
