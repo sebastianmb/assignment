@@ -61,3 +61,6 @@ print ("Unidades Totales nivel 2: "+TotalV2u.astype(str))
 print ("Precio Total nivel 2: "+TotalV2p.astype(str))
 #Contar numero de filas ya filtrado por nivel
 df_nivel2.shape
+
+#Cantidad de filas y columnas en el filtro nivel 2
+df_nivel2.shape[0]
