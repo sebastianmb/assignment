@@ -48,10 +48,13 @@ df_nivel11 = df[nivel11]
 #filtrado por niveles
 nivel2 = df['Nivel'] == 2.0
 nivel2
-df_nivel2 = df[nivel2]
-#df_nivel2.head()
+df_nivel2 = pd.DataFrame(df[nivel2])
 
+filename='df_nivel2.xlsx'
 
+df_nivel2.to_excel(filename)
+
+df_nivel2.head()
 TotalV2u = df_nivel2['Venta'].sum()
 
 TotalV2p = df_nivel2['Precio'].sum()
@@ -59,8 +62,16 @@ TotalV2p = df_nivel2['Precio'].sum()
 
 print ("Unidades Totales nivel 2: "+TotalV2u.astype(str))
 print ("Precio Total nivel 2: "+TotalV2p.astype(str))
-#Contar numero de filas ya filtrado por nivel
-df_nivel2.shape
 
 #Cantidad de filas y columnas en el filtro nivel 2
-df_nivel2.shape[0]
+
+pd.Series(df_nivel2.shape)
+
+# Dividir el numero de filas en partes iguales
+
+#Dividir Dataframe en partes iguales ejemplo en dos partes iguales
+df_nivel2_1 = df_nivel2.iloc[:41,:]
+
+
+df_nivel2_2=df_nivel2.iloc[41:,:]
+
