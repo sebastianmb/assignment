@@ -65,13 +65,23 @@ print ("Precio Total nivel 2: "+TotalV2p.astype(str))
 
 #Cantidad de filas y columnas en el filtro nivel 2
 
-pd.Series(df_nivel2.shape)
+index=pd.Series(df_nivel2.shape)
+
+print(index)
+
+personas= input("Ingresa la cantidad de personas que van a cargar en el nivel 2: ")
+split=int(index[0]/int(personas))
 
 # Dividir el numero de filas en partes iguales
 
 #Dividir Dataframe en partes iguales ejemplo en dos partes iguales
-df_nivel2_1 = df_nivel2.iloc[:41,:]
+
+df_nivel2_1 = df_nivel2.iloc[:split,:]
 
 
-df_nivel2_2=df_nivel2.iloc[41:,:]
+df_nivel2_2=df_nivel2.iloc[split:,:]
+
+
+df_nivel2_1.head()
+df_nivel2_2.head()
 
