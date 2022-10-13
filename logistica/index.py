@@ -81,7 +81,14 @@ df_nivel2_1 = df_nivel2.iloc[:split,:]
 
 df_nivel2_2=df_nivel2.iloc[split:,:]
 
+filename='nivel2_1.xlsx'
+
+df_nivel2_1.to_excel(filename)
 
 df_nivel2_1.head()
+
 df_nivel2_2.head()
+filename='nivel2_2.xlsx'
+
+df_nivel2_2.to_excel(filename)
 
