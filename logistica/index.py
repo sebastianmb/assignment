@@ -8,6 +8,10 @@ dfcargue= pd.read_excel(path+'cargue.xlsx')
 dfassignment=pd.read_excel(path+'asignacion.xlsx')
 ​
 ​
+#llenar campo nan con 0
+df_filled_nan=dfcargue.fillna(0)
+#llenar campo texto por 0
+
 # Get names of indexes for which column Stock has value No
 ​
 # Convertir el campo record_id de integer a float
