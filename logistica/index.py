@@ -18,3 +18,32 @@ dfcargue_ok=dfcargue_fill.replace(marcas,0)
 # Convertir el campo record_id de integer a float
 dfcargue_ok['Codigo'] = dfcargue_ok['Codigo'].astype('int64')
 dfcargue_ok['Codigo'].dtype
+
+#Merge de los dos dataframes
+merged_inner=pd.merge(left=dfcargue_ok, right=dfassignment, left_on='Codigo', right_on='Codigo')
+
+#merged_inner
+df_ruta = merged_inner.loc[:, ~merged_inner.columns.str.contains('^Unnamed')]
+
+filename='df_ruta.xlsx'
+
+df_ruta.to_excel(filename)
+
+
+#print('prueba record successfully exported into Excel File')
+df_ruta.head()
+
+#filtrado por niveles
+Niveles =[1.1,1.2,1.3,2.0,3.0]
+filtro = df_ruta['Nivel'] == 1.1
+
+
+for i in Niveles:
+    filtro = df_ruta['Nivel'] == i
+    filtro
+    name= str(i)
+    df_nivel = pd.DataFrame(df_ruta[filtro])
+    
+    filename='df_nivel+'+name+'.xlsx'
+
+    df_nivel.to_excel(filename)
