@@ -1,12 +1,19 @@
- # Importar librerias
+# Importar librerias
 import pandas as pd
 import numpy as np
 import xlrd
+import os
 
 #Leer dataframe
 path="C:\\ProyectosWeb\\assigment\\logistica\\"
-dfcargue= pd.read_excel(path+'cargue.xlsx')
-dfassignment=pd.read_excel(path+'asignacion.xlsx')
+ficheros= os.listdir('C:\\ProyectosWeb\\assigment\\logistica\\rutas')
+
+for fichero in ficheros:
+    r=os.path.splitext(fichero)
+
+    dfcargue= pd.read_excel(path+'rutas\\1.xlsx')
+    dfassignment=pd.read_excel(path+'asignacion.xlsx')
+    print(r) 
 
 #llenar campo nan con 0
 dfcargue_fill=dfcargue.fillna(0)
